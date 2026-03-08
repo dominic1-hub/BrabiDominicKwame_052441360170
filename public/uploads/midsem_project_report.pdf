@@ -1,0 +1,22 @@
+MID-SEMESTER PROJECT REPORT
+Elmwood University Course Registration Portal
+Introduction
+The Elmwood University Course Registration Portal is an online platform created to make the process of course registration easier and more organized for students. The project demonstrates how web technologies such as HTML, CSS, and PHP can be combined to build an interactive system that allows users to register, log in, and access a personal dashboard. The portal aims to reduce the difficulties associated with manual registration and provide a centralized system where students can manage their course registration details efficiently.
+Objectives of the Project
+The primary aim of this project is to develop a working course registration portal for students. The specific goals include:
+1. Providing a platform where students can create accounts by submitting their personal information.
+2. Allowing registered users to log into the system securely.
+3. Enabling students to choose their preferred courses during the registration process.
+4. Allowing users to upload necessary documents such as profile photos and other required files.
+5. Creating a dashboard where users can view and manage their information after logging in.
+System Description
+The system is made up of different web pages and backend programs that function together to deliver the required services. The registration page (index.html) is the starting point for new users, where they input details such as their name, email, password, and selected course. The form also provides options for uploading files like profile pictures and other important documents. After submission, the information is processed by a PHP script (register.php) which handles the data and stores it appropriately.
+Existing users can access the system through the login page (login.html/login.php) by entering their email address and password. If the login details are correct, the user is granted access to the dashboard page (dashboard.php). The dashboard acts as the main interface after authentication, displaying user details and allowing navigation within the portal.
+The portal also includes a logout function (logout.php) that allows users to safely end their session and return to the login page. The visual design and layout of the portal are enhanced using CSS files (style.css and dashboard.css) to make the interface more user-friendly and visually appealing.
+Technologies Used
+• HTML – used for building the structure and layout of the web pages.
+• CSS – used to improve the design and presentation of the portal.
+• PHP – used for server-side operations such as form processing, authentication, and session control.
+• File Upload Functionality – implemented in PHP to allow users to submit profile images and other documents.
+Conclusion
+The Elmwood University Course Registration Portal demonstrates the development of a simple web-based system for student registration. Through this platform, students can create accounts, upload necessary documents, log in securely, and access their dashboard. The project shows how front-end and back-end technologies work together to build a functional web application. In the future, the system can be enhanced by integrating a database, implementing stronger security measures such as password encryption, and adding additional features like course management and administrative access.

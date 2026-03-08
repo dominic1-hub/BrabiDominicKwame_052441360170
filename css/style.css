@@ -1,0 +1,132 @@
+body{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.contact-information{
+  background-color: #fff;
+}
+.big-data{
+  border: inherit;
+  margin: auto;
+  width: 80%;
+  max-width: 960px;
+  box-shadow: -2px -1px 9px 0px rgba(0, 0, 0, .3);
+}
+
+.featured-contactwrap{
+  border: inherit;
+  position: relative;
+  border-radius: 10px;
+}
+
+.featured-credentials, .featured-contact_form{
+  border: inherit;
+  width: 50%;
+  display: inline-block;
+  height: 520px;
+}
+
+.featured-credentials{
+  min-width: 380px;
+  background-color: #f0eeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.featured-contact_form{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  
+
+}
+
+h1{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #042546;
+}
+.contact-txt{
+  padding: 64px 48px;
+  color: #000;
+  text-align: center;
+}
+.contact-txt h4{
+  font-size: 1.5rem;
+}
+
+.form{
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-row{
+  margin: 15px 0;
+}
+
+.form-label{
+  margin-bottom: 0px;
+  color: #3c4c27;
+}
+
+.u-blue{
+  color: #042546;
+  font-size: 2em;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+.form-textField{
+  margin-bottom: 0;
+  padding: .4rem 0;
+  padding-right: 5rem;
+  padding-left: 1rem;
+  font-size: 1rem; 
+  border-color: #3c4c2726;
+}
+
+select{
+  width: -webkit-fill-available;
+  padding: .4rem 0;
+  padding-right: 5rem;
+  padding-left: 1rem;
+}
+
+.u-button{
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #042546;
+  border: 1px solid #7ac1ff;
+  width: -webkit-fill-available;
+}
+
+.your-message{
+  height: 150px;
+  resize: none;
+}
+
+.u-button:hover{
+  background-color: #7ac1ff;
+}
+
+.form-column p{
+  font-size: 1em;
+}
+
+.form-column p a{
+  color: red;
+}
+
+.form-column p a:hover{
+  
+  text-shadow: 0 1px 10px rgba(0, 0, 0, .3);
+}
