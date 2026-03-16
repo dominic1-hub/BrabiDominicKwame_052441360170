@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Registration Page</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="../css/login_style.css">
 </head>
 <body>
   <div class="contact-information">
@@ -12,19 +12,13 @@
       <div class="featured-contactwrap">
         <div class="featured-credentials">
           <div class="contact-txt">
-            <h1>WELCOME TO ELMWOOD UNIVERSITY COURSE REGISTRATION PORTAL</h1>
+            <h1>STUDENT LOG IN PORTAL</h1>
           </div>
         </div>
         <div id="form" class="featured-contact_form">
-          <h2 class="text-section u-blue">Fill the form to register</h2>
+          <h2 class="text-section u-blue">Login to register</h2>
           <div class="form">
-            <form class="form-container" action="register.php" method="post" enctype="multipart/form-data" >
-              <div class="form-row">
-                <div class="form-column">
-                  <div class="form-label">Full name: *</div>
-                  <input class="form-textField" type="text" name="name" placeholder="Name*" required>
-                </div>
-              </div>  
+            <form class="form-container" action="login.php" method="post" enctype="multiple/form-data">
               <div class="form-row">
                 <div class="form-column">
                   <div class="form-label">Email Address: *</div>
@@ -38,28 +32,20 @@
                 </div>
               </div>
               <div class="form-row">
-                <div class="form-column">
-                  <div class="form-label">Select Course *</div>
-                  <select name="course" >
-                      <option value="Btech Computer Technology">Btech Computer Technology</option>
-                      <option value="Artificial Intelligence">Artificial Intelligence</option>
-                      <option value="Machine Learning">Machine Learning</option>
-                      <option value="Data Science">Data Science</option>
-                      <option value="Statistics & Probability">Statistics & Probability</option>
-                    </select>
+                <div class="form-column row-form-column">
+                  <div>
+                    <input type="checkbox"> Remember me
+                  </div>
+                  <div>
+                    <a href="#">Forget Details?</a>
+                  </div>
                 </div>
-              </div>
+              </div>  
               <div class="form-row">
                 <div class="form-column">
-                  <input class="files-upload" type="file" name="profile" required><br><br>
-                  <input class="files-upload" type="file" name="document" required>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-column">
-                  <input class="u-button scaleX" type="submit" data-wait="Please wait..."  value="Submit Form" >
-                  <p class="login">Already have an account?
-                      <a href="login.php">Login</a>
+                  <input class="u-button scaleX" type="submit" data-wait="Please wait..."  value="Log in " >
+                  <p class="login">Don't have an account?
+                      <a href="register.php">Register</a>
                   </p>
                 </div>
               </div>  
