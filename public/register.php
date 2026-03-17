@@ -96,6 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="form-column">
                   <div class="form-label">Select Course *</div>
                   <select name="course" >
+                      <option value=""></option>
                       <option value="Btech Computer Technology">Btech Computer Technology</option>
                       <option value="Artificial Intelligence">Artificial Intelligence</option>
                       <option value="Machine Learning">Machine Learning</option>
