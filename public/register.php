@@ -2,6 +2,26 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // 1. Define allowed extensions
+    $allowed_profile = ['jpg', 'jpeg', 'png'];
+    $allowed_doc = ['pdf', 'doc', 'docx'];
+
+    // 2. Get file info
+    $profile_ext = strtolower(pathinfo($_FILES['profile']['name'], PATHINFO_EXTENSION));
+    $doc_ext = strtolower(pathinfo($_FILES['document']['name'], PATHINFO_EXTENSION));
+
+    // 3. Validate Profile (JPG/PNG)
+    if (!in_array($profile_ext, $allowed_profile)) {
+        echo "<script>alert('Error: Profile picture must be a JPG or PNG file.')</script>";
+        exit();
+    }
+
+    // 4. Validate Document (PDF/DOC)
+    if (!in_array($doc_ext, $allowed_doc)) {
+        echo "<script>alert('Error: Document must be a PDF or DOC file.')</script>";
+        exit();
+    }
+
     // Store form data in session
     $_SESSION['user'] = [
         'name' => $_POST['name'],
@@ -12,18 +32,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'document' => $_FILES['document']['name']
     ];
 
+    // Fixed the missing bracket from your original code
+    if (strlen($_POST['password']) < 6) {
+        echo "Password must be at least 6 characters.";
+        exit();
+    }
+
     // Save uploaded files
     if (!is_dir('uploads')) {
         mkdir('uploads');
-
-    }if (!is_dir('profiles')) {
-        mkdir('profiles');
     }
+    
+    // Move files to the designated folder
     move_uploaded_file($_FILES['profile']['tmp_name'], 'uploads/' . $_FILES['profile']['name']);
     move_uploaded_file($_FILES['document']['tmp_name'], 'uploads/' . $_FILES['document']['name']);
 
-    // Redirect to dashboard
-    header("Location: dashboard.php");
+    header("Location: index.php");
     exit;
 }
 ?>
